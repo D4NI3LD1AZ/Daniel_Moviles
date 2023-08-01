@@ -4,11 +4,11 @@ import kotlin.random.Random
 
 class Nequi {
     private var saldoD = 1000000.0
-    private val celular = "23212332"
+    private val telefono = "23212332"
     private val clave = "12345"
 
     fun iniciar() {
-        var intentos = 3
+        var intentos = 5
         while (intentos > 0) {
             println("¡Hola! Bienvenido a Nequi.")
             println("Ingrese su número de celular:")
@@ -55,7 +55,7 @@ class Nequi {
         println("----------------------------")
     }
 
-    fun mostrarSaldo() {
+    fun mostrarS() {
         println("Saldo disponible: $saldoD")
     }
 
