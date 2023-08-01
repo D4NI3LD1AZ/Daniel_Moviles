@@ -25,10 +25,10 @@ class Nequi {
                     val opcion = readLine()?.toIntOrNull()
 
                     when (opcion) {
-                        1 -> sacar()
+                        1 -> retirar()
                         2 -> enviar()
                         3 -> recargar()
-                        4 -> pagarServicioPublico()
+                        4 -> pagarServicio()
                         5 -> {
                             println("Gracias por usar Nequi. Hasta luego.")
                             return
@@ -59,7 +59,7 @@ class Nequi {
         println("Saldo disponible: $saldoD")
     }
 
-    fun sacar() {
+    fun retirar() {
         if (saldoD < 2000) {
             println("No te alcanza para retirar.")
         } else {
@@ -121,7 +121,7 @@ class Nequi {
     }
 
 
-    fun pagarServicioPublico() {
+    fun pagarServicio() {
         println("Ingrese el valor a pagar por el servicio público:")
         val valorPagar = readLine()?.toDoubleOrNull()
 
